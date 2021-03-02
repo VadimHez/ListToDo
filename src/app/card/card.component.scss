@@ -1,0 +1,18 @@
+.example-card {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    min-width: 500px;
+    margin-top: 5px;
+}
+.align-right {
+    flex: 1 1 auto;
+    float: right;
+}
+
+.item-done {
+  text-decoration: line-through;
+}
+.item-todo {
+  text-decoration: none;
+}

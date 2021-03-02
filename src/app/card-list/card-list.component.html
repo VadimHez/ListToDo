@@ -1,0 +1,13 @@
+<div>
+<mat-selection-list #todoList class="full-list">
+    <mat-list-item  class="item-height" *ngFor="let item of filledList">
+
+      <app-card 
+        [data]="item"
+        (edit)="edit($event)">
+      </app-card>
+ 
+    </mat-list-item>
+</mat-selection-list>
+<button mat-raised-button class="action-button" (click)="create()">Add Item</button>
+</div>

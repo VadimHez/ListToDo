@@ -1,0 +1,14 @@
+<div>
+<mat-card class="example-card">
+	<mat-card-header>
+		<mat-card-title [ngClass]="data.done ? 'item-done': 'item-todo'">{{data.title}}</mat-card-title>
+		<mat-card-subtitle>{{data.description}}</mat-card-subtitle>
+    <mat-checkbox mat-card-avatar [checked]="data.done" (change)="data.done = !data.done"></mat-checkbox>
+	</mat-card-header>
+  <mat-card-actions class="align-right">
+    <button class="align-right" mat-icon-button (click)="onEdit()"> 
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+</div>
